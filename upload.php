@@ -6,7 +6,7 @@
     <title>Upload Page</title>
 </head>
 <body>
-<form method="post" action="save-upload.php" enctype="multipart/form-data">
+<form method="post" action="update.php" enctype="multipart/form-data">
     <label for"anyFile">Choose a File: </label>
     <input name="anyFile" id="anyFile" type="file" />
     <button>Upload</button>
