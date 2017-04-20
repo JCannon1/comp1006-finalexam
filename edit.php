@@ -40,7 +40,7 @@ if (!empty($_GET['carId'])) {
 <main class="container">
     <h1>Edit a Car</h1>
     <!-- New page form -->
-    <form method="post" action="save-car.php" enctype="multipart/form-data">
+    <form method="post" action="update.php" enctype="multipart/form-data">
         <fieldset class="form-group">
             <label for="name" class="col-sm-1">Name: *</label>
             <input name="name" id="name" required placeholder="Name" value="<?php echo $name; ?>" />
