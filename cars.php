@@ -16,14 +16,14 @@ if (empty($_SESSION['carId'])) {
     // connect to my database
     require_once('db.php');
 
-    $sql = "SELECT carId, name, price, manufacturerId, photo FROM cars ORDER BY name";
+    $sql = "SELECT carId, name, price, manufacturerId FROM cars ORDER BY name";
 
     $cmd = $conn->prepare($sql);
     $cmd->execute();
     $adminusers = $cmd->fetchAll();
 
     echo '<table class="table table-striped table-hover">
-    <tr><th>Name</th><th>Price</th><tr><th>Manufactuer</th>';
+    <tr><th>Name</th><th>Price</th><th>Manufactuer</th>';
 
     if (empty($_SESSION['carId'])) {
         echo '<th>Edit</th><th>Delete</th>';
