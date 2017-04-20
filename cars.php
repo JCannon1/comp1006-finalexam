@@ -9,7 +9,7 @@ require_once('header.php'); ?>
 // start session
 session_start();
 
-if (!empty($_SESSION['carId'])) {
+if (empty($_SESSION['carId'])) {
     echo '<a href="edit.php">Edit a Car</a> ';
 }
 
