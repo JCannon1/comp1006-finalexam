@@ -50,12 +50,12 @@ if (!empty($_GET['carId'])) {
             <input name="price" id="price" required placeholder="Price" value="<?php echo $price; ?>" />
         </fieldset>
         <fieldset class="form-group">
-            <label for="manufacturerId" class="col-sm-1">ManufacturerId: *</label>
-            <input name="manufacturerId" id="manufacturerId" required placeholder="ManufacturerId" value="<?php echo $manufacturerId; ?>" />
+            <label for="manufacturer" class="col-sm-1">Manufacturer: *</label>
+            <input name="manufacturer" id="manufacturer" required placeholder="Manufacturer" value="<?php echo $manufacturerId; ?>" />
         </fieldset>
         <fieldset class="form-group">
             <label for="photo" class="col-sm-1">Photo: *</label>
-            <input name="photo" id="photo" required placeholder="Photo" value="<?php echo $photo; ?>" />
+            <input img="images/cx3.png" id="photo" value="<?php echo $photo; ?>" />
         </fieldset>
 
          <input name="carId" id="carId" value="<?php echo $carId; ?>" type="hidden" />
