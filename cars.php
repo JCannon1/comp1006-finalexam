@@ -34,7 +34,8 @@ if (!empty($_SESSION['carId'])) {
     foreach ($cars as $car) {
         echo '<tr><td>' . $car['name'] . '</td>
             <td>' . $car['price'] . '</td>
-            <td>' . $car['manufacturer'] . '</td>;
+            <td>' . $car['manufacturer'] . '</td>
+            <td>';
             
         echo '</td>';
 
