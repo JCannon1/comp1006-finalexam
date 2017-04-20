@@ -6,6 +6,7 @@ require_once('header.php'); ?>
 <h1>Cars List</h1>
 
 <?php
+ini_set('display_errors', 1);
 // start session
 session_start();
 
