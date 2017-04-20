@@ -21,7 +21,7 @@ if (!empty($_GET['carId'])) {
         $cmd = $conn->prepare($sql);
         $cmd->bindParam(':carId', $carId, PDO::PARAM_INT);
         $cmd->execute();
-        $user = $cmd->fetch();
+        $car = $cmd->fetch();
 
          
         $carId = $car['carId'];

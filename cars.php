@@ -6,7 +6,7 @@ require_once('header.php'); ?>
 <h1>Cars List</h1>
 
 <?php
-ini_set('display_errors', 1);
+// ini_set('display_errors', 1);
 // start session
 session_start();
 
@@ -21,7 +21,7 @@ if (empty($_SESSION['carId'])) {
 
     $cmd = $conn->prepare($sql);
     $cmd->execute();
-    $adminusers = $cmd->fetchAll();
+    $cars = $cmd->fetchAll();
 
     echo '<table class="table table-striped table-hover">
     <tr><th>Name</th><th>Price</th><th>Manufacturer</th>';
