@@ -23,7 +23,7 @@ if (empty($_SESSION['carId'])) {
     $adminusers = $cmd->fetchAll();
 
     echo '<table class="table table-striped table-hover">
-    <tr><th>Name</th><th>Price</th><th>Manufactuer</th>';
+    <tr><th>Name</th><th>Price</th><th>Manufacturer</th>';
 
     if (empty($_SESSION['carId'])) {
         echo '<th>Edit</th><th>Delete</th>';
