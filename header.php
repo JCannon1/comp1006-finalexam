@@ -20,7 +20,7 @@ ob_start();
     <ul class="nav navbar-nav">
 
         <li><a href="default.php" class="navbar-brand"></li>
-        <li><a href="admin-users.php">Users</a></li> <li><a href="<?php echo $page ?>"></a></li>
+        <li><a href="cars.php">Cars</a></li> <li><a href="<?php echo $manufacturer ?>"></a></li>
 
         <?php
 
@@ -30,7 +30,7 @@ ob_start();
             echo '<li><a href=".php"></a>';
         }
         else {
-            echo '<li><a href="pages.php">Manufacturer Names</a></li> <li><a href="logo.php">Logo</a></li> <li><a href="admin-users.php">Public Site</a></li> <li><a href="control-pannel.php">Control Pannel</a></li> <li><a href="logout.php">Logout</a></li>';
+            echo '<li><a href="manufactuer.php">Manufacturer Names</a></li> <li><a href="logo.php">Logo</a></li> <li><a href="cars.php">Public Site</a></li> <li><a href="control-pannel.php">Control Pannel</a></li> <li><a href="logout.php">Logout</a></li>';
         }
         ?>
 

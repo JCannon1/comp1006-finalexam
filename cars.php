@@ -23,9 +23,9 @@ if (!empty($_SESSION['carId'])) {
     $adminusers = $cmd->fetchAll();
 
     echo '<table class="table table-striped table-hover">
-    <tr><th>Name</th><th>Price</th><tr><th>Manufactuer</th><th>Photo</th>';
+    <tr><th>Name</th><th>Price</th><tr><th>Manufactuer</th>';
 
-    if (!empty($_SESSION['carId'])) {
+    if (empty($_SESSION['carId'])) {
         echo '<th>Edit</th><th>Delete</th>';
     }
 
@@ -34,11 +34,11 @@ if (!empty($_SESSION['carId'])) {
     foreach ($cars as $car) {
         echo '<tr><td>' . $car['name'] . '</td>
             <td>' . $car['price'] . '</td>
-            <td>';
+            <td>' . $car['manufacturer'] . '</td>;
             
         echo '</td>';
 
-        if (!empty($_SESSION['carId'])) {
+        if (empty($_SESSION['carId'])) {
             echo '<td><a href="edit.php?carId=' . $car
             ['carId'] . '" class="btn btn-primary">Edit</a></td>
             <td><a href="delete-car.php?carId=' . $car['carId'] 
