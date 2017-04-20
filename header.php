@@ -27,7 +27,7 @@ ob_start();
         session_start();
 
         if (empty($_SESSION['carId'])) {
-            echo '<li><a href=".php"></a>'
+            echo '<li><a href=".php"></a>';
         }
         else {
             echo '<li><a href="pages.php">Manufacturer Names</a></li> <li><a href="logo.php">Logo</a></li> <li><a href="admin-users.php">Public Site</a></li> <li><a href="control-pannel.php">Control Pannel</a></li> <li><a href="logout.php">Logout</a></li>';
