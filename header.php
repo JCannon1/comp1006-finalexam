@@ -22,7 +22,7 @@ ob_start();
         <li><a href="default.php" class="navbar-brand">The Car Finder</a></li>
         <li><a href="cars.php">All Cars</a></li> <li><a href="<?php echo $manufacturerId ?>"></a></li>
         <li><a href="mazda.php">Mazda</a></li> <li><a href="<?php echo $manufacturerId ?>"></a></li>
-        <li><a href="olkswagen.php">Volkswagen</a></li> <li><a href="<?php echo $manufacturer ?>"></a></li>
+        <li><a href="volkswagen.php">Volkswagen</a></li> <li><a href="<?php echo $manufacturer ?>"></a></li>
         <li><a href="ford.php">Ford</a></li> <li><a href="<?php echo $manufacturer ?>"></a></li>
 
         <?php

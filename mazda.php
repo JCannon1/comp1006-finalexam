@@ -17,7 +17,7 @@ if (empty($_SESSION['carId'])) {
     // connect to my database
     require_once('db.php');
 
-    $sql = "SELECT carId, name, price, manufacturerId FROM cars ORDER BY name";
+    $sql = "SELECT carId, name, price, manufacturerId FROM cars WHERE manufacturerId = 1 ORDER BY name";
 
     $cmd = $conn->prepare($sql);
     $cmd->execute();
