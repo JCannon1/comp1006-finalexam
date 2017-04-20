@@ -62,6 +62,10 @@ if (!empty($_GET['carId'])) {
         <button class="btn btn-success col-sm-offset-1">Save</button>
     </form>
 
+<?php
+require_once('upload.php');
+?>
+
 </main>
 
 <?php
