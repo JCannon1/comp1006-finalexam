@@ -55,7 +55,7 @@ if (!empty($_GET['carId'])) {
         </fieldset>
         <fieldset class="form-group">
             <label for="photo" class="col-sm-1">Photo: *</label>
-            <input img="images/cx3.png" id="photo" value="<?php echo $photo; ?>" />
+            <img src="images/cx3.png" id="photo" value="<?php echo $photo; ?>" />
         </fieldset>
 
          <input name="carId" id="carId" value="<?php echo $carId; ?>" type="hidden" />
