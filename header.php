@@ -19,7 +19,7 @@ ob_start();
 <nav class="navbar navbar-default">
     <ul class="nav navbar-nav">
 
-        <li><a href="default.php" class="navbar-brand"></a></li>
+        <li><a href="default.php" class="navbar-brand">The Car Finder</a></li>
         <li><a href="cars.php">Manufacturer</a></li> <li><a href="<?php echo $manufacturerId ?>"></a></li>
         <li><a href="cars.php">Manufacturer</a></li> <li><a href="<?php echo $manufacturer ?>"></a></li>
 
